@@ -1,1 +1,2 @@
 time="2023-01-31T23:40:41Z" level=info msg="create router" func="&{{}}()" file="main.go:15"
+time="2023-01-31T23:46:23Z" level=info msg="create router" func="&{{}}()" file="main.go:15"

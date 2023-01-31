@@ -1,16 +1,21 @@
 package handler
 
 import (
+	"coffeecatalogue4/pkg/logging"
 	"coffeecatalogue4/pkg/service"
 	"github.com/gin-gonic/gin"
 )
 
 type Handler struct {
 	services *service.Service
+	logger   logging.Logger
 }
 
-func NewHandler(services *service.Service) *Handler {
-	return &Handler{services: services}
+func NewHandler(logging logging.Logger, services *service.Service) *Handler {
+	return &Handler{
+		logger:   logging,
+		services: services,
+	}
 }
 
 func (h *Handler) InitRouters() *gin.Engine {

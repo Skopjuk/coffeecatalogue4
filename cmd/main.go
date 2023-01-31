@@ -18,7 +18,7 @@ func main() {
 	}
 	repos := repository.NewRepository()
 	services := service.NewService(repos)
-	handlers := handler.NewHandler(services)
+	handlers := handler.NewHandler(logger, services)
 	srv := new(coffeecatalogue4.Server)
 	if err := srv.Run(viper.GetString("path"), handlers.InitRouters()); err != nil {
 		log.Fatalf("error occured while running http server: %s", err.Error())
