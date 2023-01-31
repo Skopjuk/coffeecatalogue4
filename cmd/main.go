@@ -3,6 +3,7 @@ package main
 import (
 	"coffeecatalogue4"
 	"coffeecatalogue4/pkg/handler"
+	"coffeecatalogue4/pkg/logging"
 	"coffeecatalogue4/pkg/repository"
 	"coffeecatalogue4/pkg/service"
 	"github.com/spf13/viper"
@@ -10,6 +11,8 @@ import (
 )
 
 func main() {
+	logger := logging.GetLogger()
+	logger.Info("create router")
 	if err := InitConfig(); err != nil {
 		log.Fatalf("error initializing configs: %s", err.Error())
 	}
