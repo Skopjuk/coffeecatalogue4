@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:13.3
+    container_name: coffeecatalogue4_db
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "qwerty"
+    ports:
+      - "5436:5432"

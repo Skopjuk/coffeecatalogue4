@@ -1,8 +1,12 @@
 package service
 
-import "coffeecatalogue4/pkg/repository"
+import (
+	"coffeecatalogue4"
+	"coffeecatalogue4/pkg/repository"
+)
 
 type Authorization interface {
+	CreateUser(user coffeecatalogue4.User) (int, error)
 }
 
 type TodoList interface {
@@ -18,5 +22,7 @@ type Service struct {
 }
 
 func NewService(repos *repository.Repository) *Service {
-	return &Service{}
+	return &Service{
+		Authorization: repos.Authorization,
+	}
 }
