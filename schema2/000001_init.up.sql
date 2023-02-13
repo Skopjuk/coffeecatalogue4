@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS users
     password varchar(255) not null unique,
     created_at timestamp not null default current_timestamp,
     updated_at timestamp not null default current_timestamp,
-    roastery_id integer not null
+    roastery_id integer
 );
 
 CREATE TABLE IF NOT EXISTS coffees (
