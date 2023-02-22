@@ -8,6 +8,7 @@ import (
 type Authorization interface {
 	CreateUser(user coffeecatalogue4.User) (int, error)
 	GenerateToken(login, password string) (string, error)
+	ParseToken(token string) (int, error)
 }
 
 type TodoList interface {

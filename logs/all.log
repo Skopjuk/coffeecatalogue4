@@ -70,3 +70,9 @@ time="2023-02-07T18:15:15Z" level=info msg="create router" func="&{{}}()" file="
 {"file":"postgres.go:40","func":"\u0026{{}}()","level":"info","msg":"new db created","time":"2023-02-20T16:53:03Z"}
 {"file":"main.go:17","func":"\u0026{{}}()","level":"info","msg":"create router","time":"2023-02-20T17:01:09Z"}
 {"file":"postgres.go:40","func":"\u0026{{}}()","level":"info","msg":"new db created","time":"2023-02-20T17:01:09Z"}
+{"file":"main.go:17","func":"\u0026{{}}()","level":"info","msg":"create router","time":"2023-02-21T13:49:10Z"}
+{"file":"postgres.go:37","func":"\u0026{{}}()","level":"error","msg":"db do not response","time":"2023-02-21T13:49:10Z"}
+{"file":"main.go:17","func":"\u0026{{}}()","level":"info","msg":"create router","time":"2023-02-21T13:51:51Z"}
+{"file":"postgres.go:40","func":"\u0026{{}}()","level":"info","msg":"new db created","time":"2023-02-21T13:51:51Z"}
+{"file":"main.go:17","func":"\u0026{{}}()","level":"info","msg":"create router","time":"2023-02-21T22:21:17Z"}
+{"file":"postgres.go:40","func":"\u0026{{}}()","level":"info","msg":"new db created","time":"2023-02-21T22:21:17Z"}
