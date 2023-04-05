@@ -4,7 +4,7 @@ import "time"
 
 type Roastery struct {
 	Id         int64     `db:"id"         json:"id"            gorm:"primary_key"`
-	Name       string    `db:"name"       json:"name"`
+	Name       string    `db:"name"       json:"name"          binding:"required"`
 	Country    string    `db:"country"    json:"country"`
 	Address    string    `db:"address"    json:"address"`
 	City       string    `db:"city"       json:"city"`

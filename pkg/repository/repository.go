@@ -14,6 +14,7 @@ type Coffee interface {
 }
 
 type Roastery interface {
+	Create(userId int, roastery coffeecatalogue4.Roastery) (int, error)
 }
 
 type Repository struct {
@@ -25,5 +26,6 @@ type Repository struct {
 func NewRepository(db *sqlx.DB) *Repository {
 	return &Repository{
 		Authorization: NewAuthPostgres(db),
+		Roastery:      NewRoasteryPostgres(db),
 	}
 }
